@@ -1,0 +1,19 @@
+---
+# This playbook sets up the dev machine.
+
+- name: setup dev machine
+  hosts: all
+  tasks:
+  - name: Generate SSH keypair
+    user:
+      name: ubuntu
+      generate_ssh_key: yes
+      ssh_key_file: .ssh/id_rsa
+  - name: Copy gitconfig
+    copy:
+      src: '../templates/gitconfig'
+      dest: '/home/ubuntu/.gitconfig'
+  - name: Copy screen config
+    copy:
+      src: '../templates/screenrc'
+      dest: '/home/ubuntu/.screenrc'

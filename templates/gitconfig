@@ -1,0 +1,25 @@
+[user]
+        name = Prasad Katti
+        email = xxx@gmail.com
+
+[core]
+        editor = vi
+
+[alias] 
+        st = status
+        stu = status -uno
+
+        df = diff
+        dfc = diff --cached
+        dfst = diff --stat
+
+        lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit -10
+        last = log -1 HEAD
+
+        br = branch
+        co = checkout
+        cob = checkout -b
+
+        ci = commit
+        cim = commit -m
+        pom = push origin master
