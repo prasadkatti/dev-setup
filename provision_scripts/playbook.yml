@@ -1,5 +1,4 @@
 ---
-# This playbook sets up the dev machine.
 
 - name: setup dev machine
   hosts: all
@@ -8,7 +7,6 @@
     user:
       name: ubuntu
       generate_ssh_key: yes
-      ssh_key_file: .ssh/id_rsa
   - name: Copy gitconfig
     copy:
       src: '../templates/gitconfig'
