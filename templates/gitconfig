@@ -22,4 +22,6 @@
 
         ci = commit
         cim = commit -m
+        cam = commit --amend
+        camno = commit --amend --no-edit
         pom = push origin master
